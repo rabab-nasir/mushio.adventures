@@ -1,0 +1,186 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative; 
+  background: url("./assets/Mariobackground2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden; 
+}
+
+
+
+#start-btn {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #f63535;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  outline:none;
+  transition: all 0.3s ease;
+}
+
+/* #settings-btn {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #f63535;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+} */
+#leaderboard-btn {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #f63535;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+#leaderboard:visited{
+  color: #ffffff;
+  /* text-decoration: none; */
+
+}
+#leaderboard{
+  text-decoration: none;
+  text-decoration-color: #ffffff;
+}
+
+
+#start-btn:hover {
+  background: #ff8a80;
+}
+
+
+
+#game-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  z-index: 1;
+  overflow: hidden; 
+}
+
+
+#score {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+
+#mario {
+  position: absolute;
+  bottom: 32px;
+  left: 50px;
+  height: 100px;
+  transition: all 0.2s;
+}
+
+
+.obstacle {
+  position: absolute;
+  bottom: 35px;
+  width: 60px;
+  transition: all 0.3s;
+  display: none;
+}
+
+.flipped {
+  transform: scaleX(-1);
+  transition: all 0s;
+}
+
+#mushroom {
+  width: 80px;
+  bottom: 10px;
+}
+
+
+/* #background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200%; 
+} */
+
+.brick {
+  width: 40px;
+  height: 40px;
+  background-color: #b9633a;
+  position: absolute;
+}
+
+.coin {
+  width: 20px;
+  height: 20px;
+  background-color: gold;
+  position: absolute;
+}
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200%; 
+  background: url("./assets/background.png") repeat-x; 
+  animation: scrollBackground 10s linear infinite; 
+}
+
+@keyframes scrollBackground {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-50%); 
+  }
+}
+
+.jump {
+  animation-name: jumpAnimation;
+  animation-duration: 0.5s; 
+}
+
+@keyframes jumpAnimation {
+  0% {
+    bottom: 32px; /* Initial position */
+  }
+  50% {
+    bottom: 100px; /* Peak of the jump */
+  }
+  100% {
+    bottom: 32px; /* Return to the ground */
+  }
+}

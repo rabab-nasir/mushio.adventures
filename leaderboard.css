@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; 
+    background: url("./assets/leaderboard.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+     
+    #table {
+        position: absolute;
+        
+            width: 50%;
+            /* margin: 10px auto; */
+            margin-top: 20px;
+            margin-bottom: 350px;
+            margin-left: 10px;
+            margin-right: 350px;
+            border-collapse: collapse;
+            align-self: left, center;
+            align-content: center;
+            border-color: blue; /*green*/
+
+        }
+        
+    #th{
+            padding: 10px;
+            border-bottom: 2px solid #ddd;
+            text-align: left;
+        }
+        #th {
+            background-color: #ffffff;
+            border-color: red;
+        }
+#Name-display
+{
+    padding: 10px;
+            border-bottom: 2px solid #ddd;
+            text-align: left;
+}
+#city-display{
+    padding: 10px;
+            border-bottom: 2px solid #ddd;
+            text-align: left;
+}
+#score-display{
+    padding: 10px;
+            border-bottom: 2px solid #ddd;
+            text-align: left;
+}

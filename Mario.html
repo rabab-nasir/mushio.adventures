@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mushio Run</title>
+    <link rel="stylesheet" type="text/css" href="mario.css" />
+    
+</head>
+<body>
+    <!-- <h1 id="h1">Welcome to Mushio Run!</h1> -->
+    <button id="start-btn">Start Game</button>
+    <!-- <button id="settings-btn">Game Settings</button> -->
+    <button id="leaderboard-btn" > <a href="leaderboard.html" id="leaderboard"> Leaderboard </a> </button>
+    
+    <div id="game-container">
+        <audio id="background-music" src="./assets/background-music.mp3" loop></audio>
+        <audio id="jump-sound" src="./assets/assets_jump.mp3"></audio>
+        
+        <div id="score"></div>
+        <div id="background"></div> 
+        <img id="mario" class="jump"  src="./assets/mario.png" />
+        <div id="brick"></div>
+        <img id="pipe" class="obstacle" src="./assets/pipe.png" />
+        <img id="mushroom" class="obstacle" src="./assets/mushroom.png" />
+    </div>
+
+    
+    <script src="login1.js"></script>
+    <script src="leaderboard.js"></script>
+
+    <script src="mario.js"></script>
+</body>
+</html>
